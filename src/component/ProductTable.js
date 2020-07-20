@@ -5,9 +5,9 @@ function ProductTable(props) {
     return (
         <div>
 
-            <td><h1>{props.name}&nbsp;&nbsp;</h1></td>
-            <td><h1>{props.price}&nbsp;&nbsp; </h1></td>
-            <td><h1>{props.category}</h1></td>
+            {props.Products.name}&nbsp;&nbsp;
+            {props.Products.price}&nbsp;&nbsp;
+            {props.Products.category}
 
 
 

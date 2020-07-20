@@ -11,21 +11,38 @@ function App(props) {
       Electronics: "Electronics",
       Clothes: "Clothes",
     }
-  }];
+
+  },
+  {
+    name: "KArim ",
+    price: "100.000$",
+    category: {
+      Electronics: "Electronics",
+      Clothes: "Clothes",
+    }
+
+  }
+  ];
 
   return (
 
     <div className="App">
-      
+
       <h1>hello</h1>
 
 
 
-      {Products.map(Product => <table><tr><td> {Product.name}{Product.price}{Product.category.Electronics} </td></tr></table>)}
+      {Products.map(Product => <table>
+        <tr>
+          <td> {Product.name}</td>
+          <td>{Product.price}</td>
+          <td>{Product.category.Clothes} </td>
+        </tr>
+      </table>)}
 
 
 
-
+      {/* 
       <table>
         <tr>
           <td> Name :<ProductTable name="Radhouani Mohaned" /> </td>
@@ -43,7 +60,7 @@ function App(props) {
           <td><ProductTable category="Electronics" /> </td>
 
         </tr>
-      </table>
+      </table> */}
 
     </div>
   );
